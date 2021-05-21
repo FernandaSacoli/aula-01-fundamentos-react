@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import OlaMundo from './components/basico/olamundo'
+import OlaMundo from './components/basico/OlaMundo'
 
 class App extends Component {
   render () {
