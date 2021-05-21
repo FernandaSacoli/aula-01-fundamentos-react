@@ -1,18 +1,20 @@
 import React from 'react';
-
 import './Card.css'
 export default (props) => {
-		
-		return(
+	
+	const estiloCard = {
+	backgroundColor: props.cor,
+	borderColor: props.cor
 
-	<div className='Card'>
-	<div className='Title'>{props.titulo}</div>
-	<div className='Content'>
-		{props.children}
+	}
+	return( 
 
+		<div className='Card' style={estiloCard}>
+			<div className= 'Title'><h2>{props.titulo}</h2></div>
+			<div className= 'Content'>
+				{props.children}
+			</div>
 		</div>
-	</div>
 
 	)
-
 }
